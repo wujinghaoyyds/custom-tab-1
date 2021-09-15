@@ -1,0 +1,7 @@
+require('./style.css');
+document.getElementById('searchEngine').addEventListener('click', () => {
+  console.log('执行了2');
+  document.getElementById('formSearch').action = 'https://www.google.com.hk/search';
+  document.getElementById('inputSearch').name = 'q';
+});
+console.log('执行了1');
