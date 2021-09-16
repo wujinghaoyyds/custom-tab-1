@@ -5,8 +5,8 @@
   "main": "./src/main.js",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open",
-    "build": "rm -rf dist && npx webpack --config webpack.config.produce.js",
+    "start": "webpack-dev-server --open",
+    "build": "rm -rf dist && npx webpack --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

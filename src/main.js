@@ -73,7 +73,7 @@ A360Button.addEventListener('click', () => {
     engineButtonIcon.innerHTML = `<use xlink:href="#icon-icon360"></use>`
 })
 
-
+// document.body.style.backgroundImage= 'url(../src/wallpaper/3.png)'
 
 
 // const localAction = localStorage.getItem('action')

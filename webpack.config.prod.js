@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-
 const base = require('./webpack.config.base.js')
 
 module.exports = {
@@ -23,11 +22,9 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: (resourcePath, context) => {
-                                return path.relative(path.dirname(resourcePath), context) + '/'
+                            publicPath: '../',
                             },
                         },
-                    },
                     'css-loader',
                 ],
             },
