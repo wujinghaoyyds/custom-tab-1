@@ -49,8 +49,6 @@ soGouButton.addEventListener('click', () => {
     inputBox.name = 'query'
     engineButtonIcon.innerHTML = `<use xlink:href="#icon-soGou"></use>`
 })
-
-
 baiduButton.addEventListener('click', () => {
     formBox.action = 'https://www.baidu.com/s'
     inputBox.name = 'wd'
@@ -72,7 +70,6 @@ A360Button.addEventListener('click', () => {
     engineButtonIcon.innerHTML = `<use xlink:href="#icon-icon360"></use>`
 })
 
-// document.body.style.backgroundImage= 'url(../src/wallpaper/3.png)'
 
 
 // const localAction = localStorage.getItem('action')
