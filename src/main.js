@@ -76,21 +76,21 @@ document.body.style.backgroundImage='url(https://pic4.zhimg.com/v2-9f59d48f6c698
 
 
 
-// const localAction = localStorage.getItem('action')
-// const localName = localStorage.getItem('name')
-// const localIcon = localStorage.getItem('icon')
-//
-// window.onbeforeunload = () => {
-//     const currentAction = JSON.stringify(formBox.action)
-//     const currentName = JSON.stringify(inputBox.name)
-//     const currentIcon = JSON.stringify(engineButtonIcon.innerHTML)
-//     localStorage.setItem('action', currentAction)
-//     localStorage.setItem('name', currentName)
-//     localStorage.setItem('icon', currentIcon)
-// }
-// formBox.action = JSON.parse(localAction)
-// inputBox.name = JSON.parse(localName)
-// engineButtonIcon.innerHTML = JSON.parse(localIcon)
+const localAction = localStorage.getItem('action')
+const localName = localStorage.getItem('name')
+const localIcon = localStorage.getItem('icon')
+
+window.onbeforeunload = () => {
+    const currentAction = JSON.stringify(formBox.action)
+    const currentName = JSON.stringify(inputBox.name)
+    const currentIcon = JSON.stringify(engineButtonIcon.innerHTML)
+    localStorage.setItem('action', currentAction)
+    localStorage.setItem('name', currentName)
+    localStorage.setItem('icon', currentIcon)
+}
+formBox.action = JSON.parse(localAction)
+inputBox.name = JSON.parse(localName)
+engineButtonIcon.innerHTML = JSON.parse(localIcon)
 
 
 
