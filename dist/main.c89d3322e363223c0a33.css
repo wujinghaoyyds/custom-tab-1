@@ -9,7 +9,6 @@ body {
     height: 100vh;
     min-height: 500px;
     position: relative;
-    background-image: url(../63d1815c2872b6154f2c.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -17,6 +16,7 @@ body {
     background-origin: border-box;
     background-clip: border-box;
 }
+/*vertical-align:middle*/
 #formSearch {
     position: absolute;
     left: 50%;

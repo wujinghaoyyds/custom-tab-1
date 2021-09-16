@@ -50,6 +50,8 @@ soGouButton.addEventListener('click', () => {
     inputBox.name = 'query'
     engineButtonIcon.innerHTML = `<use xlink:href="#icon-soGou"></use>`
 })
+
+
 baiduButton.addEventListener('click', () => {
     formBox.action = 'https://www.baidu.com/s'
     inputBox.name = 'wd'
@@ -70,8 +72,10 @@ A360Button.addEventListener('click', () => {
     inputBox.name = 'q'
     engineButtonIcon.innerHTML = `<use xlink:href="#icon-icon360"></use>`
 })
+document.body.style.backgroundImage='url(https://pic4.zhimg.com/v2-9f59d48f6c6985d85eb5ba0f277e89cf_r.jpg)'
 
-//
+
+
 // const localAction = localStorage.getItem('action')
 // const localName = localStorage.getItem('name')
 // const localIcon = localStorage.getItem('icon')
