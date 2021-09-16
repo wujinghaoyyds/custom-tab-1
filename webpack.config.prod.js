@@ -9,8 +9,8 @@ module.exports = {
     plugins: [
         ...base.plugins,
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-            chunkFilename: '[id].[contenthash].css',
+            filename: '[name].css',
+            chunkFilename: '[id].css',
             ignoreOrder: false,
         })],
     module: {
