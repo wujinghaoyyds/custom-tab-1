@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     entry: './src/main.js',
     output: {
-        filename: 'main.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[contenthash].js'
     },
     plugins: [new HtmlWebpackPlugin({
         title: 'Development',
@@ -13,6 +14,10 @@ module.exports = {
     })],
     module: {
         rules: [
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: ['file-loader']
+            },
             {
                 test: /\.styl$/,
                 use: ['style-loader',

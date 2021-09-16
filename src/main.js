@@ -1,4 +1,5 @@
 import './style.css'
+
 const formBox = document.getElementById('formSearch')
 const engineMenu = document.getElementById('selectEngine')
 const engineButton = document.getElementById('searchEngine')
@@ -70,8 +71,7 @@ A360Button.addEventListener('click', () => {
     engineButtonIcon.innerHTML = `<use xlink:href="#icon-icon360"></use>`
 })
 
-
-
+//
 // const localAction = localStorage.getItem('action')
 // const localName = localStorage.getItem('name')
 // const localIcon = localStorage.getItem('icon')

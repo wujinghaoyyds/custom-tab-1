@@ -9,8 +9,8 @@ module.exports = {
     plugins: [
         ...base.plugins,
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css',
+            filename: '[name].[contenthash].css',
+            chunkFilename: '[id].[contenthash].css',
             ignoreOrder: false,
         })],
     module: {
@@ -22,9 +22,11 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: '../',
+                            publicPath: (resourcePath, context) => {
+                                return path.relative(path.dirname(resourcePath), context) + '/'
                             },
                         },
+                    },
                     'css-loader',
                 ],
             },

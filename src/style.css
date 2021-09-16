@@ -9,7 +9,7 @@ body {
     height: 100vh;
     min-height: 500px;
     position: relative;
-    background-image: url(wallpaper/paper.png);
+    background-image: url(./wallpaper/1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
